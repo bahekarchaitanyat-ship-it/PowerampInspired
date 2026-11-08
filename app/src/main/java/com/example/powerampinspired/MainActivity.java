@@ -161,7 +161,7 @@ public class MainActivity extends Activity {
     private void showEqualizer(){
         TextView h=text("AUDIO EFFECTS",18,Color.WHITE);content.addView(h);
         if(equalizer==null){content.addView(text("Play a track to activate audio effects.",13,0xffaaaaaa));return;}
-        TextView preset=text("Preset: "+equalizer.getPreset(),14,0xffd6a84f);content.addView(preset);
+        TextView preset=text("Equalizer", 14, 0xffd6a84f);
         for(short b=0;b<equalizer.getNumberOfBands();b++){
             final short band=b;TextView label=text("Band "+(b+1),13,Color.WHITE);content.addView(label);
             SeekBar bar=new SeekBar(this);bar.setMax(equalizer.getBandLevelRange()[1]-equalizer.getBandLevelRange()[0]);
