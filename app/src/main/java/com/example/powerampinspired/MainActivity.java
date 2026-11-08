@@ -14,6 +14,9 @@ import android.view.*;
 import android.widget.*;
 import java.util.*;
 import java.io.*;
+import android.media.audiofx.Equalizer;
+import android.media.audiofx.BassBoost;
+import android.media.audiofx.Virtualizer;
 
 public class MainActivity extends Activity {
     private final ArrayList<Track> tracks = new ArrayList<>();
